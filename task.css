@@ -1,0 +1,91 @@
+nav{
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    padding: 10px;
+}
+
+nav a{
+    text-decoration: none;
+    color:white;
+    padding: 10px;
+}
+
+
+@media (min-width:768px){
+    nav{
+        flex-direction: row;
+        gap: 30px;
+    }
+}
+
+
+h1{
+    text-align: center;
+}
+
+img{
+    width: 300px;
+    border-radius: 20px;
+    background-color: blue;
+    display: block;
+    margin: auto;
+}
+
+
+video{
+    width: 50vw;
+    padding: 10px;
+    background-color:purple;
+    display: block;
+    margin: auto;
+}
+
+table{
+    width: 60%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+th{
+    background-color: brown;
+}
+
+button{
+    border: none;
+    background-color:purple;
+    color: white;
+    padding: 12px 20px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+button:hover{
+    opacity: 0.7;
+    background-color:red;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 20px;
+}
+
+.box{
+    background-color: yellowgreen;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width:767px){
+    .grid-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
